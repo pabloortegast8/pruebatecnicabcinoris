@@ -1,0 +1,45 @@
+este proyecto es una prueba tecnica aqui dejo la url
+para levantar el proyecto a nivel de swagger
+http://localhost:8080/swagger-ui/index.html
+
+la aplicacion con respecto a la BD se crea automaticamente solo hay que levantar el proyecto y probar con esta url en postman
+
+http://localhost:8080/api
+
+y con este cuerpo
+
+{
+  "name": "Pablo Ortega",
+  "email": "Pablo@pruebanoris.com",
+  "password": "norisaprobe",
+  "phones": [
+    {
+      "number": "1234567",
+      "citycode": "1",
+      "countrycode": "57"
+    }
+  ]
+}
+
+respuesta sugerida deberia dar esto
+
+{
+    "id": "37c6f200-42aa-443a-a9b9-60b9f0beb2f6",
+    "name": "Pablo Ortega",
+    "email": "Pablo@pruebanoris.com",
+    "password": "norisaprobe",
+    "phones": [
+        {
+            "number": "1234567",
+            "citycode": "1",
+            "countrycode": "57"
+        }
+    ],
+    "created": "2024-10-15T10:37:10.4892741",
+    "modified": "2024-10-15T10:37:10.4892741",
+    "lastLogin": "2024-10-15T10:37:10.4892741",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQYWJsb0BwcnVlYmFub3Jpcy5jb20iLCJpYXQiOjE3Mjg5OTk0MzB9.jdGxR2AgRByw4efHuk4gE3B1M3bePLssKoZHvcBH8iQ",
+    "active": true
+}
+
+para hacer la prueba de si el correo existe solo vuelva a lanzar el mismo body.
